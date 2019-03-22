@@ -16,8 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    imageLibrary = [[ImageLibrary alloc] init];
+    self.imageView.image = [imageLibrary getFirstImage];
 }
 
+- (IBAction)prev:(id)sender {
+    self.imageView.image = [imageLibrary getNextImage];
+}
 
+- (IBAction)next:(id)sender {
+    self.imageView.image = [imageLibrary getPrevImage];
+}
 @end

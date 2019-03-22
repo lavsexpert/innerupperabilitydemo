@@ -13,6 +13,10 @@
 		E25F768D2243A78900A8FE9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25F768C2243A78900A8FE9D /* Assets.xcassets */; };
 		E25F76902243A78900A8FE9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25F768E2243A78900A8FE9D /* LaunchScreen.storyboard */; };
 		E25F76932243A78900A8FE9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25F76922243A78900A8FE9D /* main.m */; };
+		E25F769B2243AB2000A8FE9D /* ImageLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = E25F769A2243AB2000A8FE9D /* ImageLibrary.m */; };
+		E25F76B12243B81D00A8FE9D /* B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76AE2243B81D00A8FE9D /* B.jpg */; };
+		E25F76B22243B81D00A8FE9D /* C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76AF2243B81D00A8FE9D /* C.jpg */; };
+		E25F76B32243B81D00A8FE9D /* A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76B02243B81D00A8FE9D /* A.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		E25F768F2243A78900A8FE9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E25F76912243A78900A8FE9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25F76922243A78900A8FE9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25F76992243AA7600A8FE9D /* ImageLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageLibrary.h; sourceTree = "<group>"; };
+		E25F769A2243AB2000A8FE9D /* ImageLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageLibrary.m; sourceTree = "<group>"; };
+		E25F76AE2243B81D00A8FE9D /* B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = B.jpg; sourceTree = "<group>"; };
+		E25F76AF2243B81D00A8FE9D /* C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = C.jpg; sourceTree = "<group>"; };
+		E25F76B02243B81D00A8FE9D /* A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = A.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +67,16 @@
 		E25F76822243A78500A8FE9D /* innerupperabilityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E25F76B02243B81D00A8FE9D /* A.jpg */,
+				E25F76AE2243B81D00A8FE9D /* B.jpg */,
+				E25F76AF2243B81D00A8FE9D /* C.jpg */,
 				E25F76832243A78500A8FE9D /* AppDelegate.h */,
 				E25F76842243A78500A8FE9D /* AppDelegate.m */,
 				E25F76862243A78500A8FE9D /* ViewController.h */,
 				E25F76872243A78500A8FE9D /* ViewController.m */,
 				E25F76892243A78500A8FE9D /* Main.storyboard */,
+				E25F76992243AA7600A8FE9D /* ImageLibrary.h */,
+				E25F769A2243AB2000A8FE9D /* ImageLibrary.m */,
 				E25F768C2243A78900A8FE9D /* Assets.xcassets */,
 				E25F768E2243A78900A8FE9D /* LaunchScreen.storyboard */,
 				E25F76912243A78900A8FE9D /* Info.plist */,
@@ -129,8 +143,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25F76902243A78900A8FE9D /* LaunchScreen.storyboard in Resources */,
+				E25F76B12243B81D00A8FE9D /* B.jpg in Resources */,
 				E25F768D2243A78900A8FE9D /* Assets.xcassets in Resources */,
+				E25F76B32243B81D00A8FE9D /* A.jpg in Resources */,
 				E25F768B2243A78500A8FE9D /* Main.storyboard in Resources */,
+				E25F76B22243B81D00A8FE9D /* C.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25F76882243A78500A8FE9D /* ViewController.m in Sources */,
+				E25F769B2243AB2000A8FE9D /* ImageLibrary.m in Sources */,
 				E25F76932243A78900A8FE9D /* main.m in Sources */,
 				E25F76852243A78500A8FE9D /* AppDelegate.m in Sources */,
 			);
@@ -288,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59USFJN23P;
 				INFOPLIST_FILE = innerupperabilityDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59USFJN23P;
 				INFOPLIST_FILE = innerupperabilityDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
