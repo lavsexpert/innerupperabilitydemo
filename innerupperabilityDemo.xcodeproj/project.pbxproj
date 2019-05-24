@@ -17,6 +17,7 @@
 		E25F76B12243B81D00A8FE9D /* B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76AE2243B81D00A8FE9D /* B.jpg */; };
 		E25F76B22243B81D00A8FE9D /* C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76AF2243B81D00A8FE9D /* C.jpg */; };
 		E25F76B32243B81D00A8FE9D /* A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E25F76B02243B81D00A8FE9D /* A.jpg */; };
+		E25F76B62244CAF700A8FE9D /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76B52244CAF700A8FE9D /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E25F76AE2243B81D00A8FE9D /* B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = B.jpg; sourceTree = "<group>"; };
 		E25F76AF2243B81D00A8FE9D /* C.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = C.jpg; sourceTree = "<group>"; };
 		E25F76B02243B81D00A8FE9D /* A.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = A.jpg; sourceTree = "<group>"; };
+		E25F76B42244CAF700A8FE9D /* innerupperabilityDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "innerupperabilityDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E25F76B52244CAF700A8FE9D /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				E25F768E2243A78900A8FE9D /* LaunchScreen.storyboard */,
 				E25F76912243A78900A8FE9D /* Info.plist */,
 				E25F76922243A78900A8FE9D /* main.m */,
+				E25F76B52244CAF700A8FE9D /* SwiftViewController.swift */,
+				E25F76B42244CAF700A8FE9D /* innerupperabilityDemo-Bridging-Header.h */,
 			);
 			path = innerupperabilityDemo;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				TargetAttributes = {
 					E25F767F2243A78500A8FE9D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -161,6 +167,7 @@
 				E25F76882243A78500A8FE9D /* ViewController.m in Sources */,
 				E25F769B2243AB2000A8FE9D /* ImageLibrary.m in Sources */,
 				E25F76932243A78900A8FE9D /* main.m in Sources */,
+				E25F76B62244CAF700A8FE9D /* SwiftViewController.swift in Sources */,
 				E25F76852243A78500A8FE9D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59USFJN23P;
 				INFOPLIST_FILE = innerupperabilityDemo/Info.plist;
@@ -313,6 +321,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = club.plus1.innerupperabilityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "innerupperabilityDemo/innerupperabilityDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59USFJN23P;
 				INFOPLIST_FILE = innerupperabilityDemo/Info.plist;
@@ -331,6 +343,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = club.plus1.innerupperabilityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "innerupperabilityDemo/innerupperabilityDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
